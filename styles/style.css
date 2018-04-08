@@ -1,0 +1,24 @@
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/* HELPERS */
+.flex-container{
+    display: flex;
+}
+
+
+/* STYLES FORM-REGISTRATION */
+
+#form-registration label, input {
+    display:inline-block;
+    vertical-align: text-top;
+    width: 100px;
+}
+
+#form-registration input {
+    padding: 5px;
+}

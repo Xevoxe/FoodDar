@@ -5,20 +5,332 @@ html {
     box-sizing: inherit;
   }
 
+/* GLOBAL STYLES */
+body {
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color: #bf1e2e;
+}
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color:#bf1e2e;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    padding:10px;
+}
+
+.image-fixedheight {
+    width: 100%;
+    height: auto;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: rgb(255, 199, 78);
+    color: #bf1e2e;
+}
+h1 {
+    font-size: 3em;
+    color: rgb(255, 199, 78);
+    text-shadow: 2px 1px white;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+fieldset {
+    border:0;
+    flex-direction: column;
+    padding: 0;
+}
+
+fieldset h2 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+legend {
+    margin-bottom: 15px;
+}
+
 /* HELPERS */
-.flex-container{
+.container-main {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+.container-flex{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
 }
 
+.flex-image {
+    width: 100%;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.flex-column {
+    display:flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.flex-row {
+    display:flex;
+    flex-direction: row;
+}
+
+.divider {
+    border: 2px solid grey;
+}
+
+.text-center {
+    text-align:center;
+}
+
+/* STYLES INDEX */
+#container-feature {
+    align-items: center;
+    justify-content: center;
+}
+
+#container-feature h1 {
+    position: absolute;
+}
 
 /* STYLES FORM-REGISTRATION */
 
-#form-registration label, input {
-    display:inline-block;
-    vertical-align: text-top;
-    width: 100px;
+form {
+    display: inline-flex;
+    justify-content: center;
+    color:#bf1e2e;
+    margin-bottom: 100px;
 }
 
-#form-registration input {
+form label, form input {
+    display:inline-block;
+    vertical-align: text-top;
+    color: #616960;
+    width: 125px
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"]{
     padding: 5px;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+    background: #d1d1d1;
+}
+
+form input[type="radio"] {
+    height:20px;
+}
+
+button[type="submit"]{
+    width: 125px;
+    height: 50px;
+    border-radius: 5px 5px 5px 5px;
+    background: #bf1e2e;
+    color: orange;
+    font-size: 1em;
+    margin: 20px;
+}
+
+#form-request label {
+    vertical-align: middle;
+    width:30px;
+}
+
+#form-registration form {
+    flex-direction: column;
+    width: 600px;
+}
+
+#form-registration button {
+    align-self: center;
+}
+
+#form-registration{
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-registration .flex-column{
+    width: 50%;
+}
+
+fieldset > div {
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* STYLES BANNER */
+#banner {
+    position:fixed;
+    width: 100%;
+    height: 150px;
+    margin-top: -150px;
+    overflow: hidden;
+    opacity: 100;
+    background: url("../images/banner.png") no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-family: 'Caveat Brush', cursive;
+    font-size: 4em;
+}
+
+#banner a {
+    color:rgb(255, 199, 78);
+}
+
+#banner {
+    opacity:0;
+}
+
+#banner button {
+    position: absolute;
+    right: 1vw;
+    z-index: 9999;
+    margin: 10px;
+    font-size: 0.5em;
+    margin: 10px;
+    background: transparent;
+    color: #d6d6d6;
+}
+
+#banner > div {
+    height: 150px;
+}
+
+/* STYLES CONTAINER-MAIN*/
+#container-main {
+    color:#bf1e2e;
+    background: #fda10078;
+    padding: 100px;
+}
+
+#zipcode {
+    width: 150px;
+    height: 50px;
+    font-size: 3em;
+    vertical-align: middle;
+}
+
+#container-main input[type="submit"] {
+    height: 50px;
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+#container-main input[type="number"]:focus {
+    outline: none;
+    border: 5px solid orange;
+}
+
+/* STYLES HEADER */
+#header {
+    background-color:rgb(255, 199, 78);
+}
+#header.container-flex {
+    justify-content:space-between;
+    align-content: center;
+    padding: 25px;
+}
+
+#header.container-flex a {
+    align-self: center;
+}
+
+/*STYLES ABOUT */
+#container-heading {
+    width: 100%;
+    height: 300px;
+    background: url("../images/aboutheading.jpg") fixed no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-heading p {
+    margin-top: 10px;
+}
+
+.arrow {
+    padding: 0 50px;
+}
+
+.link {
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+}
+
+
+
+/*STYLES FOOTER */
+
+footer {
+    width: 100%;
+    background-color: #212121;
+    color: grey;
+    padding: 50px 25px 75px 25px;
+    text-align: center;
+}
+
+footer p {
+    color:grey;
+}
+
+
+ a {
+    color: inherit;
+}
+
+#footer.container-flex {
+    justify-content: space-around;
+}
+
+#footer.container-flex > div {
+    text-align:center;
+}
+
+.column {
+    width: 33%;
+    padding: 25px;
 }

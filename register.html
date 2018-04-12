@@ -1,46 +1,98 @@
 <html lang = "en">
     <head>
-        <title>About Foodar</title>
+        <title>Register</title>
         <meta charset= "utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link type ="text/css" rel="stylesheet" href="styles/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Roboto:700" rel="stylesheet">
     </head>
 
     <body>
-         Foodar <br/>
-        
-        <div id="form-registration">
+            <div id="header" class="container-flex">
+                    <a href="index.html"><img src="images/logo.png" alt="Foodar"></a>
+                    <div>
+                    <a href="index.html">Home |</a>
+                    <a href="register.html">Register |</a>
+                    <a href="request.html">Request |</a>
+                    <a href="about.html">About</a>       
+                    </div>
+                </div>
+        <div id="form-registration" class="container-flex">
             <h1>Register</h1> 
             <p>Please fill out the form below:</p>
-            <form>
-                <fieldset>
-                    <legend>Details</legend>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="passowrd" required>
-                        <label for="fname">First Name</label>
-                        <input type="text" name="fname" id="fname" required>
-                        <label for="lname">Last Name</label>
-                        <input type="text" name="lname" id="lname" required>
-            </fieldset>
-                <fieldset>
-                    <legend>Address</legend>
-                        <label for="address">Adress</label>
-                        <input type="text" name="address" id="address" required placeholder="Address">
-                        <label for="city">City</label>
-                        <input type="text" name="city" id="city" required placeholder="City">
-                        <label for="zipcode">Zipcode</label>
-                        <input type="text" name="zipcode" id="zipcode" required placeholder="Zipcode">
+                <form action="#">
+                    <fieldset class="container-flex">
+                        <legend><h2>Personal Details</h2></legend>
+                            <div class="flex-row">
+                                <div class="flex-column">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+                                <div class="flex-column">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" id="passowrd" required>
+                                </div>
+                            </div>
+                            <div class="flex-row">
+                                <div class="flex-column">
+                                    <label for="fname">First Name</label>
+                                    <input type="text" name="fname" id="fname" required>
+                                </div>
+                                <div class="flex-column">
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" name="lname" id="lname" required>
+                                </div>
+                            </div>
                 </fieldset>
+                    <fieldset class="container-flex">
+                        <legend><h2>Address Information</h2></legend>
+                            <div class="flex-row">
+                                <div class="flex-column">
+                                  <label for="street">Street</label>
+                                  <input type="text" name="street" id="street" required placeholder="1600 Penns St.">
+                                </div>
+                                <div class="flex-column">
+                                      <label for="street">Address Line 1</label>
+                                    <input type="text" name="street-line" id="street-line" required placeholder="PO BOX/Apt">
+                                </div>
+                            </div>
+                            <div class="flex-row">
+                                <div class="flex-column">
+                                    <label for="zip">Zipcode</label>
+                                    <input type="text" name="zip" id="zip" required placeholder="77084">
+                                </div>
+                                <div class="flex-column">
+                                    <label for="city">City</label>
+                                    <input type="text" name="city" id="city" required placeholder="Houston">
+                                </div>
+                            </div>
+                    </fieldset>
 
-            <button type="submit">Register</button>
-            </form> 
+                <button type="submit">Register</button>
+                </form> 
         </div>
-        
-
-
-
-
+        <footer>
+                <div id="footer" class="container-flex">
+                    <div class="column">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="register.html">Registration</a></li>
+                            <li><a href="about.html">How it Works</a></li>
+                        </ul>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="column">
+                        <ul>
+                            <li><a href="#">Private Policy</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="column">
+                        <p>Once you connect with real food you will never go back!</p>
+                    </div>
+                </div>
+                <p>&copy; 2015. All Rights Reserved.</p>
+            </footer>
     </body>
 </html>

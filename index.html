@@ -1,0 +1,69 @@
+<html lang = "en">
+    <head>
+        <title>Foodar</title>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type ="text/css" rel="stylesheet" href="styles/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Roboto:700" rel="stylesheet">
+    </head>
+
+    <body>
+    <div class="container-main text-center">
+        <div>
+        <div id="banner">
+            <button type="button" id="banner-close">X</button>
+            <div class="container-flex flex-center">
+                <a href="register.html"><h3>Hungry? Register Today!</h3></a> 
+            </div>
+        </div>
+        </div>
+        <div id="header" class="container-flex">
+                <a href="index.html"><img src="images/logo.png" alt="Foodar"></a>
+                <div>
+                <a href="index.html">Home |</a>
+                <a href="register.html">Register |</a>
+                <a href="request.html">Request |</a>
+                <a href="about.html">About</a>       
+                </div>
+            </div>
+        <div id="container-feature" class="container-flex">
+             <img class="flex-image" src="images/recipe.jpg">
+             <h1>Try A New Meal Today.</h1> 
+        </div>
+        <div id="container-main">
+            <h2>Find a driver near you!</h2>
+            <p>Type in your zipcode below and type Go! To find a driver near you.</p>
+            <form>
+                <input id="zipcode" name="zipcode" type="number" maxlength="5">
+                <input type="submit" id="zipcode-button" value="Go!">                
+            </form>
+        </div>
+    <footer>
+        <div id="footer" class="container-flex">
+            <div class="column">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="register.html">Registration</a></li>
+                    <li><a href="about.html">How it Works</a></li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="column">
+                <ul>
+                    <li><a href="#">Private Policy</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="column">
+                <p>Once you connect with real food you will never go back!</p>
+            </div>
+        </div>
+        <p>&copy; 2015. All Rights Reserved.</p>
+    </footer>
+    </div>
+    <script src="source/banner.js"></script>
+    <script src="source/zipcode.js"></script>
+    
+    </body>
+</html>

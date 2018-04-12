@@ -1,0 +1,90 @@
+<html lang = "en">
+    <head>
+        <title>Request</title>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type ="text/css" rel="stylesheet" href="styles/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Roboto:700" rel="stylesheet">
+    </head>
+
+    <body>
+            <div id="header" class="container-flex">
+                    <a href="index.html"><img src="images/logo.png" alt="Foodar"></a>
+                    <div>
+                    <a href="index.html">Home |</a>
+                    <a href="register.html">Register |</a>
+                    <a href="request.html">Request |</a>
+                    <a href="about.html">About</a>       
+                    </div>
+                </div>
+        <h1 class="text-center">Submit your request</h1>
+        <p class="text-center">Please fill out the form below.</p>
+
+        <form id="form-request" class="container-flex">
+            <div>
+                <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                </div>
+                <fieldset>
+                    <legend><h2>Choose Your Style:</h2></legend>
+                    <div>
+                        <label for="style">Classic</label>
+                        <input type="radio" class="food-style" name="style" value="3">
+                        <label for="style">Premium</label>
+                        <input type="radio" class="food-style" name="style" value="5">
+                        <label for="style">Royal</label>
+                        <input type="radio" class="food-style" name="style" value="10">
+                    </div>
+                </fieldset>
+                <div>
+                <label for="restaurant">Restaurant</label>
+                <input type="text" id="restaurant" name="restaurant">
+                </div>
+                <fieldset>
+                    <legend><h2>Tip your driver!</h2></legend>
+                    <div>
+                        <label for="tip">10%</label>
+                        <input type="radio" class="driver-tip" name="tip" value="10">
+                        <label for="tip">15%</label>
+                        <input type="radio" class="driver-tip" name="tip" value="15">
+                        <label for="tip">20%</label>
+                        <input type="radio" class="driver-tip" name="tip" value="20">
+                    </div>
+                </fieldset>
+                <div>
+                <h2>Total: $<span id="total">0.00</span></h2>
+                </div>
+                <div class="text-center">
+                <button type="submit">Request</button>
+                </div>
+            </div>
+            </form>
+            
+        </div>
+        <footer>
+                <div id="footer" class="container-flex">
+                    <div class="column">
+                        <ul>
+                                <li><a href="index.html">Home</a></li>
+                            <li><a href="register.html">Registration</a></li>
+                            <li><a href="about.html">How it Works</a></li>
+                        </ul>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="column">
+                        <ul>
+                            <li><a href="#">Private Policy</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="column">
+                        <p>Once you connect with real food you will never go back!</p>
+                    </div>
+                </div>
+                <p>&copy; 2015. All Rights Reserved.</p>
+            </footer>
+        <script src="source/request.js"></script>
+    </body>
+</html>
